@@ -5,18 +5,25 @@
 const list = ['Salvatore', 'Christian', 'Dario', 'Davide', 'Giuseppe', 'Biagio'];
 
 // Creo un prompt per chiedere all'utente il suo nome
+const name = prompt('What\s your name?');
+
+let find = false
 
 
 // Creo una condizione per vedere se l'utente è presente nella lista
-const name = prompt('What\s your name?');
 
 for (let i = 0; i < list.length; i++) {
     const element = list[i];
 
     if (name == element) {
-        console.log('you are invitated');
-    } else {
-        console.log('You are not invited');
+        find = true;
     }
     
 }
+
+if (find == true) {
+    console.log('You are invitated');
+} else {
+    alert('You are not invited');
+}
+

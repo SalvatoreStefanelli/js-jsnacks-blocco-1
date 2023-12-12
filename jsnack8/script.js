@@ -5,3 +5,11 @@
 
 const numb = Number(prompt('Type a 4-digit number'));
 
+let sum = 0;
+
+for (let i = 0; i <= 4; i++) {
+    const element = numb[i];
+    sum_tot = sum + element
+}
+
+console.log(sum_tot);
